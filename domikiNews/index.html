@@ -18,62 +18,74 @@
 <main class="main">
 
 <div class="out">
+
+    <div class="photo">
     <img src="images/h.jpg" alt=""  class="photo1">
 
     <img src="images/photo_2026-07-26_18-13-48.jpg" alt="" class="photo2">
 
     <img src="images/photo_2026-07-26_18-13-51.jpg" alt="" class="photo3"  >
+    </div>
+   
+    <div class="text-wrapper">
 
 <h1 class="data"> 26.07 </h1>
+
 <P class="content-text">
     26.07 Влад зробив фото з Матвієм . тому що Влад вирушає до себе додому , Після майже 4 тижнів гостювання у своєї бабусі . Перед відїздом він зробив фото на пам'ять. Також фото зробив Динис брат Влада одже він теж відїжає
 </P>
 
 </div>
 
+</div>
+
 </main>
 
-<style>
-        .out {
-        flex-direction: column;
-        display: flex;
-        background-color: bisque;
-        font-size: 20px;       
-        line-height: 1.5;
-        font-family: Arial, sans-serif; 
-        padding: 20px;}
-    
-     .date {
-    display: block;       
-    font-size: 42px;       
-    font-weight: bold;     
-    margin: 0 0 15px 0;    
-    line-height: 1;}
-
-    .content-text {
-    display: block;
-     font-size: 24px;       
-     line-height: 1.4;      
-      margin: 0;}
-
-    .photo1 {
-    width: 500px;       
-    height: auto;      
-    object-fit: cover;  
-    margin: 10px; }
+<style> 
   
-    .photo2 {
-    width: 400px;       
-    height: auto;      
-    object-fit: cover;  
-    margin: 10px; }
+  .body{ background-color: bisque; }
+  
+  .out { 
+    display: flex; 
+    flex-direction: row; 
+    background-color: bisque; 
+    font-size: 20px; 
+    line-height: 1.5; 
+    font-family: Arial, sans-serif; 
+    padding: 20px;
+    gap: 20px; }
+  
+  
+  .date { 
+    display: block; 
+    font-size: 42px; 
+    font-weight: bold; 
+    margin: 0 0 15px 0; 
+    line-height: 1;}
+  
+    .text-wrapper{
+    display: flex;
+    flex-direction: column;}
 
-    .photo3 {
-    width: 300px;       
-    height: auto;      
-    object-fit: cover;  
-    margin: 10px; }
 
+  .content-text { 
+    display: flex; 
+    flex-direction: column; 
+    font-size: 24px; 
+    line-height: 1.4; 
+    margin: 0;}
+  
+  .content-text p {
+    margin: 0;} 
+  
+  .photo {
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px;}
+  
+  .photo1 { width: 500px; height: auto; object-fit: cover; } 
+  .photo2 { width: 400px; height: auto; object-fit: cover; } 
+  .photo3 { width: 300px; height: auto; object-fit: cover; } 
 </style>
 
 
